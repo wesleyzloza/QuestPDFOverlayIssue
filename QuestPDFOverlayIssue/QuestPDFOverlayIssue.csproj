@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Footer.svg" />
+    <None Remove="Assets\Header.svg" />
+    <None Remove="Assets\Overlay.pdf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Footer.svg" />
+    <EmbeddedResource Include="Assets\Header.svg" />
+    <EmbeddedResource Include="Assets\Overlay.pdf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="QuestPDF" Version="2025.4.2" />
+  </ItemGroup>
+
+</Project>
